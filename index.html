@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Átomo Geradores · Manutenção de grupos geradores e peças</title>
+<meta name="description" content="Manutenção preventiva e corretiva de grupos geradores, peças de reposição e plantão 24 horas aos sábados, domingos e feriados. Átomo Geradores, São Paulo.">
+<meta name="theme-color" content="#03261C">
+<meta property="og:title" content="Átomo Geradores · Energia em movimento">
+<meta property="og:description" content="Manutenção preventiva e corretiva de grupos geradores, peças de reposição e plantão 24 horas.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://atomopecasparageradores.com.br">
+<meta property="og:image" content="https://atomopecasparageradores.com.br/img/hero-geradores.jpg">
+<link rel="icon" type="image/png" href="img/logo-orbitas.png">
+<link rel="preload" as="image" href="img/hero-geradores.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Átomo Geradores",
+  "legalName": "RC Caldas Comércio e Assistência Técnica de Geradores ME",
+  "description": "Manutenção preventiva e corretiva de grupos geradores e venda de peças.",
+  "url": "https://atomopecasparageradores.com.br",
+  "logo": "https://atomopecasparageradores.com.br/img/logo-atomo.png",
+  "image": "https://atomopecasparageradores.com.br/img/hero-geradores.jpg",
+  "telephone": "+55-11-4881-7650",
+  "email": "vendas@atomogeradores.com.br",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Virgílio Martins de Oliveira, 1374",
+    "postalCode": "07914-043",
+    "addressLocality": "Francisco Morato",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "sameAs": ["https://www.instagram.com/atomogeradores"],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00"}
+  ]
+}
+</script>
+
+<style>
+:root {
+  /* cores do logotipo oficial */
+  --verde: #08785B;
+  --verde-hover: #066A50;
+  --ambar: #FCAF17;
+  /* sistema */
+  --verde-noite: #03261C;
+  --verde-profundo: #04352A;
+  --verde-claro: #E7F2EE;
+  --cinza-bg: #F4F6F5;
+  --cinza-linha: #E2E8E5;
+  --texto: #0F1F1A;
+  --texto-2: #55665E;
+  --texto-3: #8A9A93;
+  --branco: #FFFFFF;
+
+  --f-titulo: "Manrope", system-ui, sans-serif;
+  --f: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --largura: 1240px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --raio: 14px;
+  --sombra: 0 1px 2px rgba(15,31,26,.04), 0 12px 32px -12px rgba(15,31,26,.14);
+  --sombra-forte: 0 30px 60px -24px rgba(3,38,28,.35);
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+body { margin: 0; background: var(--branco); color: var(--texto); font: 400 16px/1.65 var(--f); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+button { font: inherit; cursor: pointer; color: inherit; }
+:focus-visible { outline: 3px solid var(--ambar); outline-offset: 3px; border-radius: 6px; }
+.wrap { width: 100%; max-width: var(--largura); margin: 0 auto; padding: 0 var(--gutter); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+h1, h2, h3, h4 { font-family: var(--f-titulo); margin: 0; letter-spacing: -.02em; }
+.sobretitulo { display: inline-flex; align-items: center; gap: 10px; font: 700 13px/1 var(--f-titulo); letter-spacing: .14em; text-transform: uppercase; color: var(--verde); }
+.sobretitulo::before { content: ""; width: 28px; height: 3px; border-radius: 2px; background: var(--ambar); }
+.titulo { font-size: clamp(30px, 3.8vw, 46px); font-weight: 800; line-height: 1.12; margin-top: 16px; }
+.intro { color: var(--texto-2); font-size: 18px; max-width: 60ch; margin: 18px 0 0; }
+.cab-secao { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap; margin-bottom: 52px; }
+.cab-secao .intro { margin: 0; max-width: 46ch; }
+section { padding: clamp(72px, 9vw, 120px) 0; }
+
+/* botões */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 28px; border-radius: 8px; border: 2px solid transparent; font: 700 15px/1 var(--f-titulo); text-decoration: none; letter-spacing: .01em; transition: background .2s, color .2s, border-color .2s, transform .2s, box-shadow .2s; white-space: nowrap; }
+.btn svg { width: 20px; height: 20px; flex: none; }
+.btn-verde { background: var(--verde); color: #fff; box-shadow: 0 10px 24px -10px rgba(8,120,91,.7); }
+.btn-verde:hover { background: var(--verde-hover); transform: translateY(-2px); }
+.btn-ambar { background: var(--ambar); color: #231800; box-shadow: 0 10px 24px -10px rgba(252,175,23,.8); }
+.btn-ambar:hover { background: #FFBE3D; transform: translateY(-2px); }
+.btn-contorno-claro { border-color: rgba(255,255,255,.55); color: #fff; }
+.btn-contorno-claro:hover { background: #fff; color: var(--verde-noite); border-color: #fff; }
+.btn-contorno { border-color: var(--cinza-linha); color: var(--texto); background: #fff; }
+.btn-contorno:hover { border-color: var(--verde); color: var(--verde); }
+
+/* barra superior */
+.barra { background: var(--verde-noite); color: #B9CEC5; font-size: 13.5px; }
+.barra .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 42px; }
+.barra a { text-decoration: none; color: #E4EFEA; }
+.barra a:hover { color: #fff; }
+.barra-itens { display: flex; gap: 26px; align-items: center; }
+.barra-itens span, .barra-itens a { display: inline-flex; align-items: center; gap: 8px; }
+.barra svg { width: 15px; height: 15px; color: var(--ambar); }
+.plantao-tag { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: #fff; }
+.plantao-tag i { width: 8px; height: 8px; border-radius: 50%; background: var(--ambar); box-shadow: 0 0 0 0 rgba(252,175,23,.6); animation: pulso 2s infinite; }
+@keyframes pulso { 70% { box-shadow: 0 0 0 8px rgba(252,175,23,0); } 100% { box-shadow: 0 0 0 0 rgba(252,175,23,0); } }
+
+/* cabeçalho */
+.topo { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.97); backdrop-filter: blur(12px); border-bottom: 1px solid var(--cinza-linha); transition: box-shadow .3s; }
+.topo.rolou { box-shadow: 0 10px 30px -18px rgba(3,38,28,.35); }
+.topo .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 88px; }
+.logo img { height: 62px; width: auto; }
+.menu { display: flex; align-items: center; gap: 4px; }
+.menu a:not(.btn) { position: relative; padding: 10px 16px; font: 600 15px/1 var(--f-titulo); text-decoration: none; color: var(--texto); }
+.menu a:not(.btn)::after { content: ""; position: absolute; left: 16px; right: 16px; bottom: 2px; height: 2px; background: var(--verde); transform: scaleX(0); transition: transform .25s; transform-origin: left; }
+.menu a:not(.btn):hover::after { transform: scaleX(1); }
+.menu .btn { margin-left: 14px; min-height: 48px; padding: 0 22px; }
+.menu-toggle { display: none; border: 1px solid var(--cinza-linha); background: #fff; border-radius: 10px; padding: 10px; }
+.menu-toggle svg { width: 22px; height: 22px; display: block; }
+
+/* hero */
+.hero { position: relative; min-height: min(86vh, 820px); display: flex; align-items: center; color: #fff; overflow: hidden; isolation: isolate; padding: 110px 0 170px; }
+.hero-foto { position: absolute; inset: 0; z-index: -2; }
+.hero-foto img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 45%; transform: scale(1.06); animation: aproxima 14s ease-out forwards; }
+@keyframes aproxima { to { transform: scale(1); } }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(3,38,28,.96) 0%, rgba(3,38,28,.86) 34%, rgba(3,38,28,.35) 68%, rgba(3,38,28,.15) 100%),
+    linear-gradient(0deg, rgba(3,38,28,.75) 0%, transparent 35%); }
+.hero-conteudo { max-width: 700px; }
+.hero .sobretitulo { color: var(--ambar); }
+.hero .sobretitulo::before { background: var(--ambar); }
+.hero h1 { font-size: clamp(40px, 5.6vw, 72px); font-weight: 800; line-height: 1.04; letter-spacing: -.03em; margin-top: 22px; }
+.hero h1 em { font-style: normal; color: var(--ambar); }
+.hero p { font-size: clamp(17px, 1.5vw, 20px); color: #D3E2DB; max-width: 56ch; margin: 24px 0 36px; }
+.hero-acoes { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero .entra { opacity: 0; transform: translateY(20px); animation: entra .9s cubic-bezier(.2,.8,.2,1) forwards; }
+.hero .entra:nth-child(2) { animation-delay: .1s; } .hero .entra:nth-child(3) { animation-delay: .2s; } .hero .entra:nth-child(4) { animation-delay: .3s; }
+@keyframes entra { to { opacity: 1; transform: none; } }
+
+/* pilares sobrepostos ao hero */
+.pilares { position: relative; z-index: 2; margin-top: -110px; }
+.pilares-grade { display: grid; grid-template-columns: repeat(4, 1fr); background: #fff; border-radius: var(--raio); box-shadow: var(--sombra-forte); overflow: hidden; }
+.pilar { padding: 34px 30px; border-right: 1px solid var(--cinza-linha); position: relative; transition: background .25s; text-decoration: none; display: block; }
+.pilar:last-child { border-right: 0; }
+.pilar:hover { background: var(--cinza-bg); }
+.pilar::after { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px; background: var(--verde); transform: scaleX(0); transition: transform .3s; transform-origin: left; }
+.pilar:hover::after { transform: scaleX(1); }
+.pilar .ico { width: 52px; height: 52px; border-radius: 12px; background: var(--verde-claro); color: var(--verde); display: grid; place-items: center; margin-bottom: 20px; }
+.pilar .ico svg { width: 26px; height: 26px; }
+.pilar h3 { font-size: 19px; font-weight: 800; }
+.pilar p { margin: 8px 0 0; font-size: 14.5px; color: var(--texto-2); line-height: 1.55; }
+.pilar.destaque .ico { background: #FFF4DB; color: #C98400; }
+
+/* empresa */
+.empresa .wrap { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(40px, 6vw, 90px); align-items: center; }
+.empresa-fotos { position: relative; padding: 0 0 60px 0; }
+.empresa-fotos .f1 { border-radius: var(--raio); overflow: hidden; box-shadow: var(--sombra); }
+.empresa-fotos .f1 img { width: 100%; aspect-ratio: 5/4; object-fit: cover; object-position: 30% center; }
+.empresa-fotos .f2 { position: absolute; right: -24px; bottom: 0; width: 46%; border-radius: var(--raio); overflow: hidden; border: 6px solid #fff; box-shadow: var(--sombra-forte); }
+.empresa-fotos .f2 img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.selo { position: absolute; left: 24px; bottom: 24px; background: var(--verde-noite); color: #fff; border-radius: 12px; padding: 18px 22px; display: flex; align-items: center; gap: 14px; box-shadow: var(--sombra-forte); }
+.selo b { font: 800 34px/1 var(--f-titulo); color: var(--ambar); }
+.selo span { font-size: 13.5px; line-height: 1.35; color: #CFE0D8; }
+.empresa p { color: var(--texto-2); font-size: 17px; margin: 18px 0 0; }
+.checks { list-style: none; padding: 0; margin: 28px 0 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+.checks li { display: flex; gap: 12px; font-weight: 500; font-size: 15.5px; align-items: flex-start; }
+.checks svg { width: 22px; height: 22px; color: var(--verde); flex: none; }
+
+/* produtos: destaques */
+.produtos { background: var(--cinza-bg); }
+.destaque-principal { display: grid; grid-template-columns: 1.15fr 1fr; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: var(--sombra); margin-bottom: 24px; }
+.palco { position: relative; background: radial-gradient(circle at 50% 45%, #FFFFFF 0%, #F1F5F3 55%, #E3EBE7 100%); display: grid; place-items: center; padding: 48px; min-height: 440px; overflow: hidden; }
+.palco::after { content: ""; position: absolute; left: 18%; right: 18%; bottom: 44px; height: 30px; border-radius: 50%; background: radial-gradient(ellipse, rgba(3,38,28,.22), transparent 70%); filter: blur(6px); }
+.palco img { position: relative; z-index: 1; max-height: 340px; width: auto; object-fit: contain; mix-blend-mode: multiply; transition: transform .6s cubic-bezier(.2,.8,.2,1); }
+.destaque-principal:hover .palco img, .destaque:hover .palco img { transform: scale(1.05) translateY(-4px); }
+.palco .etiqueta { position: absolute; top: 22px; left: 22px; z-index: 2; background: var(--verde); color: #fff; font: 700 11.5px/1 var(--f-titulo); letter-spacing: .1em; text-transform: uppercase; padding: 8px 12px; border-radius: 6px; }
+.destaque-texto { padding: clamp(32px, 4vw, 56px); display: flex; flex-direction: column; justify-content: center; }
+.destaque-texto .cat { font: 700 12.5px/1 var(--f-titulo); letter-spacing: .12em; text-transform: uppercase; color: var(--texto-3); }
+.destaque-texto h3 { font-size: clamp(26px, 2.6vw, 34px); font-weight: 800; line-height: 1.15; margin-top: 14px; }
+.destaque-texto p { color: var(--texto-2); margin: 16px 0 0; font-size: 16.5px; }
+.specs { list-style: none; margin: 24px 0 32px; padding: 0; border-top: 1px solid var(--cinza-linha); }
+.specs li { display: flex; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--cinza-linha); font-size: 15px; }
+.specs svg { width: 20px; height: 20px; color: var(--verde); flex: none; margin-top: 2px; }
+.destaque-acoes { display: flex; gap: 12px; flex-wrap: wrap; }
+.destaques-dupla { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.destaque { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: var(--sombra); display: flex; flex-direction: column; }
+.destaque .palco { min-height: 320px; padding: 40px; }
+.destaque .palco img { max-height: 240px; }
+.destaque .palco::after { bottom: 32px; }
+.destaque .destaque-texto { padding: 30px 34px 34px; flex: 1; }
+.destaque .destaque-texto h3 { font-size: 24px; }
+.destaque .destaque-texto p { font-size: 15.5px; }
+.destaque .destaque-acoes { margin-top: 24px; }
+
+/* catálogo */
+.catalogo-cab { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; margin: 88px 0 26px; }
+.catalogo-cab h3 { font-size: 26px; font-weight: 800; }
+.filtros { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 26px; }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { border: 1px solid var(--cinza-linha); background: #fff; color: var(--texto-2); border-radius: 8px; padding: 10px 16px; font: 600 14px/1 var(--f-titulo); transition: all .2s; }
+.chip:hover { color: var(--texto); border-color: #C9D4CF; }
+.chip[aria-pressed="true"] { background: var(--verde-noite); border-color: var(--verde-noite); color: #fff; }
+.busca { position: relative; margin-left: auto; flex: 0 1 320px; }
+.busca input { width: 100%; height: 46px; border: 1px solid var(--cinza-linha); border-radius: 8px; background: #fff; padding: 0 16px 0 44px; font: inherit; font-size: 15px; color: var(--texto); }
+.busca input:focus { outline: none; border-color: var(--verde); box-shadow: 0 0 0 4px rgba(8,120,91,.12); }
+.busca svg { position: absolute; left: 14px; top: 13px; width: 20px; height: 20px; color: var(--texto-3); }
+.catalogo { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.peca { background: #fff; border-radius: var(--raio); overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--cinza-linha); transition: box-shadow .3s, transform .3s, border-color .3s; }
+.peca:hover { transform: translateY(-4px); box-shadow: var(--sombra-forte); border-color: transparent; }
+.peca-foto { position: relative; aspect-ratio: 4/3.4; background: radial-gradient(circle at 50% 45%, #fff 0%, #F3F6F5 70%); border: 0; padding: 0; width: 100%; display: block; }
+.peca-foto img { position: absolute; inset: 22px; width: calc(100% - 44px); height: calc(100% - 44px); object-fit: contain; mix-blend-mode: multiply; transition: transform .5s ease; }
+.peca:hover .peca-foto img { transform: scale(1.06); }
+.peca-foto .ver { position: absolute; right: 12px; bottom: 12px; z-index: 1; font: 600 12px/1 var(--f-titulo); background: rgba(3,38,28,.86); color: #fff; padding: 8px 11px; border-radius: 6px; opacity: 0; transform: translateY(6px); transition: all .25s; }
+.peca:hover .ver, .peca-foto:focus-visible .ver { opacity: 1; transform: none; }
+.peca-corpo { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; border-top: 1px solid var(--cinza-linha); }
+.peca-cat { font: 700 11px/1 var(--f-titulo); letter-spacing: .1em; text-transform: uppercase; color: var(--verde); }
+.peca h4 { font-size: 16.5px; font-weight: 700; line-height: 1.3; margin: 8px 0 16px; }
+.peca .add { margin-top: auto; min-height: 42px; border-radius: 8px; border: 1px solid var(--cinza-linha); background: #fff; font: 600 14px/1 var(--f-titulo); color: var(--texto); display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all .2s; }
+.peca .add svg { width: 16px; height: 16px; }
+.peca .add:hover { border-color: var(--verde); color: var(--verde); }
+.add.na-lista, .peca .add.na-lista { background: var(--verde); border-color: var(--verde); color: #fff; }
+.vazio { grid-column: 1 / -1; text-align: center; padding: 56px 16px; color: var(--texto-2); background: #fff; border-radius: var(--raio); border: 1px dashed var(--cinza-linha); }
+.vazio a, .nota a { color: var(--verde); font-weight: 600; }
+.nota { margin-top: 28px; color: var(--texto-2); }
+
+/* segmentos */
+.segmentos-grade { display: grid; grid-template-columns: repeat(7, 1fr); gap: 14px; }
+.segmento { border: 1px solid var(--cinza-linha); border-radius: var(--raio); padding: 28px 16px 24px; text-align: center; transition: border-color .25s, box-shadow .25s, transform .25s; background: #fff; }
+.segmento:hover { border-color: transparent; box-shadow: var(--sombra); transform: translateY(-3px); }
+.segmento svg { width: 38px; height: 38px; color: var(--verde); margin: 0 auto 14px; display: block; }
+.segmento span { font: 700 14.5px/1.3 var(--f-titulo); }
+
+/* diferenciais (faixa escura com foto) */
+.diferenciais { position: relative; color: #fff; isolation: isolate; overflow: hidden; }
+.diferenciais::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(3,38,28,.97), rgba(3,38,28,.9) 50%, rgba(3,38,28,.8)), url("img/oficina.jpg") center/cover; }
+.diferenciais .sobretitulo { color: var(--ambar); }
+.diferenciais .titulo { color: #fff; }
+.diferenciais .intro { color: #BFD3CA; }
+.dif-grade { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.12); border-radius: var(--raio); overflow: hidden; }
+.dif { background: rgba(3,38,28,.75); padding: 36px 30px; backdrop-filter: blur(4px); }
+.dif .num { font: 800 15px/1 var(--f-titulo); color: var(--ambar); letter-spacing: .06em; }
+.dif h3 { font-size: 20px; font-weight: 800; margin: 22px 0 10px; }
+.dif p { margin: 0; color: #BFD3CA; font-size: 15px; }
+
+/* cta */
+.cta { padding: 0; }
+.cta-caixa { position: relative; z-index: 2; margin-top: -90px; margin-bottom: 72px; background: linear-gradient(110deg, var(--verde) 0%, #0A8E6B 60%, #0B9A73 100%); border-radius: 20px; padding: clamp(36px, 5vw, 60px); display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; color: #fff; overflow: hidden; box-shadow: var(--sombra-forte); }
+.cta-caixa::after { content: ""; position: absolute; right: -60px; top: -80px; width: 320px; height: 320px; background: url("img/logo-orbitas.png") center/contain no-repeat; opacity: .12; }
+.cta-caixa h2 { font-size: clamp(26px, 3vw, 36px); font-weight: 800; line-height: 1.15; }
+.cta-caixa p { margin: 10px 0 0; color: #D8EEE6; font-size: 17px; }
+.cta-caixa .btn { position: relative; z-index: 1; }
+
+/* contato */
+.contato { padding-top: 0; }
+.contato-grade { display: grid; grid-template-columns: 1fr 1.15fr; gap: 28px; }
+.contato-grade > * { min-width: 0; }
+.info { display: grid; gap: 14px; align-content: start; }
+.info-item { display: flex; gap: 18px; padding: 22px 24px; border: 1px solid var(--cinza-linha); border-radius: var(--raio); text-decoration: none; transition: border-color .2s, box-shadow .2s; background: #fff; }
+a.info-item:hover { border-color: transparent; box-shadow: var(--sombra); }
+.info-item .ico { width: 48px; height: 48px; border-radius: 12px; background: var(--verde-claro); color: var(--verde); display: grid; place-items: center; flex: none; }
+.info-item .ico svg { width: 22px; height: 22px; }
+.info-item small { display: block; font: 700 12px/1.3 var(--f-titulo); letter-spacing: .1em; text-transform: uppercase; color: var(--texto-3); }
+.info-item strong { display: block; font: 800 20px/1.3 var(--f-titulo); margin-top: 4px; overflow-wrap: anywhere; }
+.info-item span.det { display: block; font-size: 14px; color: var(--texto-2); margin-top: 2px; }
+.info-item.plantao { background: var(--verde-noite); border-color: var(--verde-noite); color: #fff; }
+.info-item.plantao .ico { background: rgba(252,175,23,.16); color: var(--ambar); }
+.info-item.plantao small { color: var(--ambar); }
+.info-item.plantao span.det { color: #BFD3CA; }
+.mapa { border-radius: var(--raio); overflow: hidden; border: 1px solid var(--cinza-linha); height: 220px; background: var(--cinza-bg); }
+.mapa iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+.form { background: #fff; border: 1px solid var(--cinza-linha); border-radius: 20px; padding: clamp(26px, 3.5vw, 44px); box-shadow: var(--sombra); }
+.form h3 { font-size: 28px; font-weight: 800; }
+.form > p { color: var(--texto-2); margin: 8px 0 26px; }
+.campos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.campo { display: flex; flex-direction: column; gap: 7px; }
+.campo.largo { grid-column: 1 / -1; }
+.campo > label, .campo > span { font: 600 13.5px/1.3 var(--f-titulo); }
+.campo input, .campo textarea { font: inherit; font-size: 16px; color: var(--texto); width: 100%; border: 1px solid var(--cinza-linha); border-radius: 8px; padding: 13px 14px; background: var(--cinza-bg); transition: border-color .2s, box-shadow .2s, background .2s; }
+.campo input:focus, .campo textarea:focus { outline: none; border-color: var(--verde); background: #fff; box-shadow: 0 0 0 4px rgba(8,120,91,.12); }
+.campo textarea { min-height: 120px; resize: vertical; }
+.tipos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.tipos label { position: relative; }
+.tipos input { position: absolute; opacity: 0; pointer-events: none; }
+.tipos span { display: block; text-align: center; padding: 12px 8px; border-radius: 8px; border: 1px solid var(--cinza-linha); font: 600 14px/1.2 var(--f-titulo); cursor: pointer; transition: all .2s; background: #fff; }
+.tipos input:checked + span { background: var(--verde); border-color: var(--verde); color: #fff; }
+.tipos input[value="Emergência"]:checked + span { background: var(--ambar); border-color: var(--ambar); color: #231800; }
+.tipos input:focus-visible + span { outline: 3px solid var(--ambar); outline-offset: 2px; }
+.form .btn { width: 100%; margin-top: 22px; }
+.erro { color: #C0392B; font-size: 14px; margin: 12px 0 0; min-height: 1em; }
+
+/* rodapé */
+.rodape { background: var(--verde-noite); color: #A9C0B6; font-size: 14.5px; padding: 72px 0 32px; }
+.rodape .wrap { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.1fr; gap: 40px; }
+.rodape .logo-rodape { display: inline-block; background: #fff; border-radius: 12px; padding: 12px 16px; }
+.rodape .logo-rodape img { height: 52px; width: auto; }
+.rodape p { margin: 18px 0 0; max-width: 36ch; }
+.rodape h4 { color: #fff; font-size: 15px; font-weight: 800; margin: 0 0 18px; }
+.rodape ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.rodape a { text-decoration: none; }
+.rodape a:hover { color: #fff; }
+.rodape-base { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.1); padding-top: 26px; margin-top: 20px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: #7F998E; }
+
+/* whatsapp + cotação flutuantes */
+.flutuantes { position: fixed; right: 20px; bottom: 20px; z-index: 60; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+.cotacao-btn[hidden] { display: none; }
+.cotacao-btn { display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 10px 0 18px; border-radius: 999px; border: 0; background: var(--verde-noite); color: #fff; font: 700 14.5px/1 var(--f-titulo); box-shadow: 0 16px 30px -12px rgba(3,38,28,.6); transition: transform .25s; }
+.cotacao-btn:hover { transform: translateY(-2px); }
+.cotacao-btn svg { width: 20px; height: 20px; color: var(--ambar); }
+.cotacao-btn .qtd { min-width: 32px; height: 32px; padding: 0 8px; border-radius: 999px; display: grid; place-items: center; background: var(--ambar); color: #231800; font-weight: 800; }
+.cotacao-btn.pulo { animation: pulo .45s ease; }
+@keyframes pulo { 40% { transform: scale(1.08); } }
+.zap-btn { width: 60px; height: 60px; border-radius: 50%; background: #25D366; color: #fff; display: grid; place-items: center; box-shadow: 0 16px 30px -10px rgba(37,211,102,.7); transition: transform .25s; }
+.zap-btn:hover { transform: scale(1.06); }
+.zap-btn svg { width: 30px; height: 30px; }
+
+/* gaveta e modal */
+.fundo { position: fixed; inset: 0; z-index: 70; background: rgba(3,20,15,.55); backdrop-filter: blur(3px); opacity: 0; pointer-events: none; transition: opacity .3s; }
+.fundo.ativo { opacity: 1; pointer-events: auto; }
+.gaveta { position: fixed; top: 0; right: 0; bottom: 0; z-index: 80; width: min(440px, 100%); background: #fff; transform: translateX(100%); transition: transform .4s cubic-bezier(.2,.8,.2,1); display: flex; flex-direction: column; }
+.gaveta.aberta { transform: none; box-shadow: -30px 0 60px -30px rgba(0,0,0,.4); }
+.gaveta-cab { display: flex; justify-content: space-between; align-items: center; padding: 24px 26px; border-bottom: 1px solid var(--cinza-linha); }
+.gaveta-cab h3 { font-size: 22px; font-weight: 800; }
+.fechar { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--cinza-linha); background: #fff; display: grid; place-items: center; }
+.fechar svg { width: 18px; height: 18px; }
+.gaveta-lista { flex: 1; overflow-y: auto; list-style: none; margin: 0; padding: 6px 26px; }
+.gaveta-lista li { display: grid; grid-template-columns: 64px 1fr auto; gap: 14px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--cinza-linha); }
+.gaveta-lista img { width: 64px; height: 64px; object-fit: contain; background: var(--cinza-bg); border-radius: 10px; padding: 6px; mix-blend-mode: multiply; }
+.gaveta-lista b { font: 700 15px/1.3 var(--f-titulo); }
+.stepper { display: flex; align-items: center; border: 1px solid var(--cinza-linha); border-radius: 8px; }
+.stepper button { width: 34px; height: 34px; border: 0; background: none; font-size: 18px; color: var(--verde); }
+.stepper span { min-width: 22px; text-align: center; font-weight: 600; }
+.gaveta-lista li.gaveta-vazia { display: block; border: 0; padding: 56px 0; text-align: center; color: var(--texto-2); }
+.gaveta-vazia a { color: var(--verde); font-weight: 600; }
+.gaveta-pe { padding: 22px 26px 26px; border-top: 1px solid var(--cinza-linha); background: var(--cinza-bg); }
+.gaveta-pe .campo { margin-bottom: 14px; }
+.gaveta-pe .campo input { background: #fff; }
+.gaveta-pe .btn { width: 100%; }
+.gaveta-pe .btn:disabled { opacity: .45; pointer-events: none; }
+
+.modal { position: fixed; z-index: 80; left: 50%; top: 50%; width: min(940px, calc(100% - 32px)); max-height: calc(100% - 32px); overflow: auto; background: #fff; border-radius: 20px; box-shadow: 0 40px 80px -20px rgba(0,0,0,.45); display: grid; grid-template-columns: 1.1fr 1fr; transform: translate(-50%, -46%); opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s; }
+.modal.aberto { opacity: 1; pointer-events: auto; transform: translate(-50%, -50%); }
+.modal .palco { min-height: 460px; border-radius: 0; }
+.modal .palco img { max-height: 360px; }
+.modal .fechar { position: absolute; top: 16px; right: 16px; z-index: 3; }
+.modal .destaque-texto { padding: 48px 40px; }
+.modal .specs { margin-bottom: 28px; }
+
+/* revelação */
+.revela { opacity: 0; transform: translateY(26px); transition: opacity .8s cubic-bezier(.2,.8,.2,1), transform .8s cubic-bezier(.2,.8,.2,1); }
+.revela.visivel { opacity: 1; transform: none; }
+
+/* responsivo */
+@media (max-width: 1180px) {
+  .barra .so-largo { display: none; }
+  .barra a, .barra span { white-space: nowrap; }
+}
+@media (max-width: 1100px) {
+  .pilares-grade { grid-template-columns: 1fr 1fr; }
+  .pilar:nth-child(2) { border-right: 0; }
+  .pilar:nth-child(-n+2) { border-bottom: 1px solid var(--cinza-linha); }
+  .catalogo { grid-template-columns: repeat(3, 1fr); }
+  .segmentos-grade { grid-template-columns: repeat(4, 1fr); }
+  .dif-grade { grid-template-columns: 1fr 1fr; }
+  .rodape .wrap { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 900px) {
+  .barra-itens .so-desk { display: none; }
+  .menu { position: absolute; top: calc(100% + 8px); left: 12px; right: 12px; flex-direction: column; align-items: stretch; gap: 0; background: #fff; border: 1px solid var(--cinza-linha); border-radius: 16px; padding: 10px; box-shadow: var(--sombra-forte); opacity: 0; transform: translateY(-8px); pointer-events: none; transition: opacity .2s, transform .2s; }
+  .menu.aberto { opacity: 1; transform: none; pointer-events: auto; }
+  .menu a:not(.btn) { padding: 16px; font-size: 17px; border-bottom: 1px solid var(--cinza-linha); }
+  .menu a:not(.btn)::after { display: none; }
+  .menu .btn { margin: 12px 0 0; }
+  .menu-toggle { display: block; }
+  .topo .wrap { height: 76px; }
+  .logo img { height: 50px; }
+  .empresa .wrap, .contato-grade, .destaque-principal, .modal { grid-template-columns: 1fr; }
+  .empresa-fotos .f2 { right: 0; }
+  .destaques-dupla { grid-template-columns: 1fr; }
+  .palco { min-height: 340px; }
+  .modal .palco { min-height: 300px; }
+  .modal .palco img { max-height: 240px; }
+  .modal .destaque-texto { padding: 30px 26px; }
+}
+@media (max-width: 640px) {
+  .barra .wrap { justify-content: center; }
+  .barra-itens:last-child { display: none; }
+  .hero { padding: 80px 0 150px; min-height: 0; }
+  .hero .sobretitulo { font-size: 11px; letter-spacing: .08em; }
+  .hero .sobretitulo::before { width: 18px; }
+  .titulo br { display: none; }
+  .chip { min-height: 42px; }
+  .busca input { height: 50px; }
+  .busca svg { top: 15px; }
+  .hero::before { background: linear-gradient(180deg, rgba(3,38,28,.9), rgba(3,38,28,.82) 60%, rgba(3,38,28,.95)); }
+  .hero-acoes .btn { flex: 1 1 100%; }
+  .pilares-grade { grid-template-columns: 1fr; }
+  .pilar { border-right: 0; border-bottom: 1px solid var(--cinza-linha); padding: 26px 24px; }
+  .pilar:last-child { border-bottom: 0; }
+  .checks { grid-template-columns: 1fr; }
+  .selo { left: 14px; bottom: 14px; padding: 14px 16px; }
+  .empresa-fotos .f2 { width: 42%; }
+  .palco { padding: 30px; min-height: 280px; }
+  .palco img { max-height: 220px; }
+  .destaque-acoes .btn { flex: 1 1 100%; }
+  .catalogo { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .peca-corpo { padding: 14px; }
+  .peca h4 { font-size: 14.5px; }
+  .peca .l-longo { display: none; }
+  .busca { flex: 1 1 100%; margin-left: 0; order: -1; }
+  .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .chip { white-space: nowrap; }
+  .segmentos-grade { grid-template-columns: 1fr 1fr; }
+  .dif-grade { grid-template-columns: 1fr; }
+  .cta-caixa { margin-top: -60px; }
+  .cta-caixa .btn { flex: 1 1 100%; }
+  .campos, .tipos { grid-template-columns: 1fr 1fr; }
+  .campos .campo:not(.largo) { grid-column: 1 / -1; }
+  .rodape .wrap { grid-template-columns: 1fr; }
+  .flutuantes { right: 12px; bottom: 12px; }
+  .cotacao-btn .txt { display: none; }
+  .zap-btn { width: 54px; height: 54px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .revela, .hero .entra { opacity: 1; transform: none; }
+  .hero-foto img { transform: none; }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-zap" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.98L2 22l5.16-1.5A9.93 9.93 0 1 0 12.04 2Zm0 18.13a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.06.89.9-2.98-.2-.31a8.2 8.2 0 1 1 6.86 3.73Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.22-.08-.39-.12-.55.13-.16.24-.64.8-.78.96-.14.17-.29.19-.53.06a6.7 6.7 0 0 1-1.98-1.22 7.43 7.43 0 0 1-1.37-1.7c-.14-.25 0-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.86 2.04 4.77 4.77 0 0 0 1 2.53 10.9 10.9 0 0 0 4.17 3.68c.58.25 1.04.4 1.39.52.58.18 1.12.16 1.54.1.47-.07 1.46-.6 1.66-1.18.2-.58.2-1.07.15-1.18-.06-.1-.22-.16-.47-.29Z"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3h3.5l1.8 4.5-2.3 1.4a11 11 0 0 0 5.1 5.1l1.4-2.3L19 13.5V17a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-relogio" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="m8 12.4 2.7 2.7L16.2 9.6"/></g></symbol>
+  <symbol id="i-ok" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-mais" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-busca" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-lista" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></g></symbol>
+  <symbol id="i-seta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <!-- ícones de serviço -->
+  <symbol id="i-prev" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M9 2.8h6v3H9zM8 11l2 2 4-4M8 17h8"/></g></symbol>
+  <symbol id="i-chave" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a4 4 0 0 0 5 5L21 13l-8 8-3-3 8-8-1.3-1.3a4 4 0 0 1-5-5l2.5 2.5 2.1-.4.4-2.1-2.5-2.5a4 4 0 0 1 4.5 1.1ZM3 21l4-4"/></symbol>
+  <symbol id="i-peca" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7z"/><path d="M3.5 7 12 11.5 20.5 7M12 11.5v10"/></g></symbol>
+  <symbol id="i-raio" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M13.5 2 4 14h6.5L9.5 22 20 9.5h-6.8L13.5 2Z"/></symbol>
+  <!-- ícones de segmento -->
+  <symbol id="s-industria" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 35V18l8 5v-5l8 5v-5l8 5V6h6v29z"/><path d="M4 35h32M10 29h3M18 29h3M26 29h3"/></g></symbol>
+  <symbol id="s-condominio" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 35V9h14v26M20 35V16h14v19M3 35h34"/><path d="M10 14h2M14 14h2M10 19h2M14 19h2M10 24h2M14 24h2M24 21h2M28 21h2M24 26h2M28 26h2"/></g></symbol>
+  <symbol id="s-hospital" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 35V12h28v23M3 35h34"/><path d="M20 16v10M15 21h10M16 35v-5h8v5"/></g></symbol>
+  <symbol id="s-construtora" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M8 35V6M8 8h26M8 14l6-6M14 8v4M30 8v8M27 16h6v5h-6zM3 35h14"/></g></symbol>
+  <symbol id="s-administradora" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="5" y="11" width="30" height="22" rx="3"/><path d="M15 11V7h10v4M5 20h30M18 20v3h4v-3"/></g></symbol>
+  <symbol id="s-shopping" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 16 7 6h26l3 10M4 16h32v19H4zM4 16c0 3 4 3 4 0 0 3 4 3 4 0 0 3 4 3 4 0 0 3 4 3 4 0 0 3 4 3 4 0 0 3 4 3 4 0 0 3 4 3 4 0"/><path d="M16 35v-9h8v9"/></g></symbol>
+  <symbol id="s-mercado" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M3 7h5l4 18h20l3-12H10"/><circle cx="15" cy="31" r="2.5"/><circle cx="28" cy="31" r="2.5"/></g></symbol>
+</svg>
+
+<!-- barra superior -->
+<div class="barra">
+  <div class="wrap">
+    <div class="barra-itens">
+      <span class="plantao-tag"><i></i>Plantão 24h · sábados, domingos e feriados</span>
+      <span class="so-desk so-largo"><svg aria-hidden="true"><use href="#i-relogio"/></svg>Seg a sex 8h–18h · Sáb 8h–12h</span>
+    </div>
+    <div class="barra-itens">
+      <a href="tel:+551148817650"><svg aria-hidden="true"><use href="#i-tel"/></svg>(11) 4881-7650</a>
+      <a class="so-desk" href="mailto:vendas@atomogeradores.com.br"><svg aria-hidden="true"><use href="#i-mail"/></svg>vendas@atomogeradores.com.br</a>
+      <a class="so-desk" href="https://www.instagram.com/atomogeradores" target="_blank" rel="noopener" aria-label="Instagram da Átomo Geradores"><svg aria-hidden="true"><use href="#i-insta"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a class="logo" href="#inicio"><img src="img/logo-atomo.png" alt="Átomo Geradores" width="367" height="126"></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#empresa">Empresa</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#segmentos">Segmentos</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-verde" href="#contato">Solicitar orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-foto"><img src="img/hero-geradores.jpg" alt="" width="2400" height="1800" fetchpriority="high"></div>
+  <div class="wrap">
+    <div class="hero-conteudo">
+      <span class="sobretitulo entra">Átomo Geradores · Energia em movimento</span>
+      <h1 id="h1" class="entra">Soluções completas em <em>grupos geradores</em></h1>
+      <p class="entra">Manutenção preventiva e corretiva, peças de reposição de alta qualidade e plantão 24 horas para indústrias, condomínios, hospitais e empresas que não podem ficar sem energia.</p>
+      <div class="hero-acoes entra">
+        <a class="btn btn-ambar" href="#contato">Solicitar orçamento <svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+        <a class="btn btn-contorno-claro" href="#produtos">Conheça os produtos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILARES -->
+<div class="pilares" id="servicos">
+  <div class="wrap">
+    <div class="pilares-grade revela">
+      <a class="pilar" href="#contato">
+        <span class="ico"><svg aria-hidden="true"><use href="#i-prev"/></svg></span>
+        <h3>Manutenção preventiva</h3>
+        <p>Visitas programadas que mantêm o grupo gerador pronto para partir quando a energia cai.</p>
+      </a>
+      <a class="pilar" href="#contato">
+        <span class="ico"><svg aria-hidden="true"><use href="#i-chave"/></svg></span>
+        <h3>Manutenção corretiva</h3>
+        <p>Diagnóstico e reparo de falhas de partida, alarmes, tensão e superaquecimento.</p>
+      </a>
+      <a class="pilar" href="#produtos">
+        <span class="ico"><svg aria-hidden="true"><use href="#i-peca"/></svg></span>
+        <h3>Peças de reposição</h3>
+        <p>Módulos, filtros, baterias, reguladores, escape e itens para a sala do gerador.</p>
+      </a>
+      <a class="pilar destaque" href="#contato">
+        <span class="ico"><svg aria-hidden="true"><use href="#i-raio"/></svg></span>
+        <h3>Plantão 24 horas</h3>
+        <p>Atendimento de emergência aos sábados, domingos e feriados.</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- EMPRESA -->
+<section class="empresa" id="empresa">
+  <div class="wrap">
+    <div class="empresa-fotos revela">
+      <div class="f1"><img src="img/oficina.jpg" alt="Técnicos fazendo a manutenção do acoplamento de um grupo gerador" loading="lazy"></div>
+      <div class="f2"><img src="img/produtos/556824.jpg" alt="Técnico inspecionando um grupo gerador" loading="lazy"></div>
+      <div class="selo"><b>24h</b><span>Plantão de<br>emergência</span></div>
+    </div>
+    <div class="revela">
+      <span class="sobretitulo">Quem somos</span>
+      <h2 class="titulo">Especialistas em manutenção de grupos geradores</h2>
+      <p>A Átomo Geradores é especializada na manutenção preventiva e corretiva de grupos geradores e na venda de peças de alta qualidade para os mais variados tipos de equipamento.</p>
+      <p>Mantemos uma equipe de técnicos especializados, apta a detectar e corrigir qualquer problema, e parcerias com empresas do ramo para entregar um serviço completo aos nossos clientes.</p>
+      <ul class="checks">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Técnicos especializados</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Grupos de diversas marcas</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Peças de alta qualidade</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Parcerias com o setor</li>
+      </ul>
+      <a class="btn btn-verde" href="#contato">Fale com um especialista <svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="produtos" id="produtos">
+  <div class="wrap">
+    <div class="cab-secao revela">
+      <div>
+        <span class="sobretitulo">Produtos</span>
+        <h2 class="titulo">Peças e componentes para <br>grupos geradores</h2>
+      </div>
+      <p class="intro">Componentes de comando, elétrica, filtragem, combustível e escape, com orientação técnica para escolher a peça certa para o seu equipamento.</p>
+    </div>
+
+    <!-- destaque principal -->
+    <article class="destaque-principal revela">
+      <div class="palco"><span class="etiqueta">Destaque</span><img src="img/produtos/9406198.jpg" alt="Módulo de comando microprocessado para grupo gerador" loading="lazy"></div>
+      <div class="destaque-texto">
+        <span class="cat">Comando e elétrica</span>
+        <h3>Módulo de comando microprocessado</h3>
+        <p>O cérebro do grupo gerador. Monitora e protege todas as funções do equipamento e comanda a partida automática quando a rede falha.</p>
+        <ul class="specs">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Partida, parada e transferência automáticas</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Leitura de tensão, frequência e horímetro</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Alarmes e proteção do motor e do alternador</li>
+        </ul>
+        <div class="destaque-acoes">
+          <button class="btn btn-verde add" type="button" data-id="9406198"></button>
+          <button class="btn btn-contorno" type="button" data-ver="9406198">Ver detalhes</button>
+        </div>
+      </div>
+    </article>
+
+    <div class="destaques-dupla">
+      <article class="destaque revela">
+        <div class="palco"><img src="img/produtos/5523239.jpg" alt="Carregadores de bateria 12 V e 24 V" loading="lazy"></div>
+        <div class="destaque-texto">
+          <span class="cat">Comando e elétrica</span>
+          <h3>Carregador de bateria 12 V e 24 V</h3>
+          <p>Mantém a bateria de partida sempre carregada. Bateria fraca é uma das causas mais comuns de gerador que não parte.</p>
+          <div class="destaque-acoes">
+            <button class="btn btn-verde add" type="button" data-id="5523239"></button>
+            <button class="btn btn-contorno" type="button" data-ver="5523239">Ver detalhes</button>
+          </div>
+        </div>
+      </article>
+      <article class="destaque revela">
+        <div class="palco"><img src="img/produtos/7686292.jpg" alt="Kit de atenuação de ruído para sala do gerador" loading="lazy"></div>
+        <div class="destaque-texto">
+          <span class="cat">Escape e ruído</span>
+          <h3>Kit de atenuação da sala do gerador</h3>
+          <p>Porta acústica, atenuadores de entrada e saída de ar e silencioso hospitalar para reduzir o ruído do grupo gerador.</p>
+          <div class="destaque-acoes">
+            <button class="btn btn-verde add" type="button" data-id="7686292"></button>
+            <button class="btn btn-contorno" type="button" data-ver="7686292">Ver detalhes</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- catálogo completo -->
+    <div class="catalogo-cab revela">
+      <h3>Catálogo completo</h3>
+      <span class="intro" style="margin:0;font-size:15px">Adicione itens à cotação e envie tudo de uma vez pelo WhatsApp.</span>
+    </div>
+    <div class="filtros">
+      <div class="chips" role="group" aria-label="Filtrar por categoria" id="chips"></div>
+      <label class="busca">
+        <span class="sr">Buscar produto</span>
+        <svg aria-hidden="true"><use href="#i-busca"/></svg>
+        <input type="search" id="busca" placeholder="Buscar produto" autocomplete="off">
+      </label>
+    </div>
+    <div class="catalogo" id="catalogo" aria-live="polite"></div>
+    <p class="nota">Não encontrou o que procura? <a href="https://wa.me/5511979902716?text=Ol%C3%A1%2C%20%C3%81tomo!%20Procuro%20a%20seguinte%20pe%C3%A7a%3A%20" target="_blank" rel="noopener">Envie a foto ou o código da peça pelo WhatsApp</a>, com a marca e o modelo do gerador.</p>
+  </div>
+</section>
+
+<!-- SEGMENTOS -->
+<section class="segmentos" id="segmentos">
+  <div class="wrap">
+    <div class="cab-secao revela">
+      <div>
+        <span class="sobretitulo">Segmentos</span>
+        <h2 class="titulo">Segmentos atendidos</h2>
+      </div>
+      <p class="intro">Atendemos empresas e instituições que dependem de energia de reserva para manter a operação.</p>
+    </div>
+    <div class="segmentos-grade revela">
+      <div class="segmento"><svg aria-hidden="true"><use href="#s-industria"/></svg><span>Indústrias</span></div>
+      <div class="segmento"><svg aria-hidden="true"><use href="#s-condominio"/></svg><span>Condomínios</span></div>
+      <div class="segmento"><svg aria-hidden="true"><use href="#s-hospital"/></svg><span>Hospitais</span></div>
+      <div class="segmento"><svg aria-hidden="true"><use href="#s-construtora"/></svg><span>Construtoras</span></div>
+      <div class="segmento"><svg aria-hidden="true"><use href="#s-administradora"/></svg><span>Administradoras</span></div>
+      <div class="segmento"><svg aria-hidden="true"><use href="#s-shopping"/></svg><span>Centros comerciais</span></div>
+      <div class="segmento"><svg aria-hidden="true"><use href="#s-mercado"/></svg><span>Supermercados</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="diferenciais">
+  <div class="wrap">
+    <div class="cab-secao revela">
+      <div>
+        <span class="sobretitulo">Por que a Átomo</span>
+        <h2 class="titulo">Compromisso com a qualidade <br>e com a sua operação</h2>
+      </div>
+      <p class="intro">Nossa prioridade é que todos os equipamentos e peças funcionem perfeitamente, com atendimento rápido e eficiente.</p>
+    </div>
+    <div class="dif-grade revela">
+      <div class="dif"><span class="num">01</span><h3>Equipe especializada</h3><p>Técnicos dedicados ao suporte de grupos geradores, aptos a detectar e corrigir qualquer problema.</p></div>
+      <div class="dif"><span class="num">02</span><h3>Soluções sob medida</h3><p>Desenvolvemos a solução de acordo com a necessidade de cada cliente e de cada equipamento.</p></div>
+      <div class="dif"><span class="num">03</span><h3>Peças de qualidade</h3><p>Componentes de alta qualidade para os mais variados tipos de grupos geradores.</p></div>
+      <div class="dif"><span class="num">04</span><h3>Plantão 24 horas</h3><p>Atendimento de emergência aos sábados, domingos e feriados.</p></div>
+    </div>
+  </div>
+  <div style="height:90px"></div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+  <div class="wrap">
+    <div class="cta-caixa revela">
+      <div>
+        <h2>Gerador parado? Fale agora com o plantão.</h2>
+        <p>Atendimento 24 horas aos sábados, domingos e feriados.</p>
+      </div>
+      <a class="btn btn-ambar" href="https://wa.me/5511979902716?text=EMERG%C3%8ANCIA%3A%20meu%20gerador%20est%C3%A1%20parado." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-zap"/></svg>(11) 97990-2716</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTATO -->
+<section class="contato" id="contato">
+  <div class="wrap">
+    <div class="cab-secao revela">
+      <div>
+        <span class="sobretitulo">Contato</span>
+        <h2 class="titulo">Solicite um orçamento</h2>
+      </div>
+      <p class="intro">Informe a marca, o modelo e a potência (kVA) do gerador para agilizar o atendimento.</p>
+    </div>
+    <div class="contato-grade">
+      <div class="info revela">
+        <a class="info-item plantao" href="https://wa.me/5511979902716?text=Ol%C3%A1%2C%20%C3%81tomo!%20Vim%20pelo%20site." target="_blank" rel="noopener">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-zap"/></svg></span>
+          <span><small>WhatsApp · Plantão 24h</small><strong>(11) 97990-2716</strong><span class="det">Sábados, domingos e feriados</span></span>
+        </a>
+        <a class="info-item" href="tel:+551148817650">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-tel"/></svg></span>
+          <span><small>Comercial</small><strong>(11) 4881-7650</strong><span class="det">Seg a sex 8h–18h · Sáb 8h–12h</span></span>
+        </a>
+        <a class="info-item" href="mailto:vendas@atomogeradores.com.br">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-mail"/></svg></span>
+          <span><small>E-mail</small><strong style="font-size:18px">vendas@atomogeradores.com.br</strong></span>
+        </a>
+        <a class="info-item" href="https://www.google.com/maps/search/?api=1&query=Rua+Virg%C3%ADlio+Martins+de+Oliveira+1374+07914-043" target="_blank" rel="noopener">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+          <span><small>Endereço</small><strong style="font-size:17px">Rua Virgílio Martins de Oliveira, 1374</strong><span class="det">Francisco Morato · SP · CEP 07914-043</span></span>
+        </a>
+        <div class="mapa"><iframe title="Mapa com a localização da Átomo Geradores" src="https://www.google.com/maps?q=Rua+Virg%C3%ADlio+Martins+de+Oliveira+1374+07914-043&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+
+      <form class="form revela" id="form" novalidate>
+        <h3>Envie sua solicitação</h3>
+        <p>Preencha os campos e a mensagem abre pronta no WhatsApp da nossa equipe.</p>
+        <div class="campos">
+          <div class="campo largo">
+            <span>Tipo de atendimento</span>
+            <div class="tipos">
+              <label><input type="radio" name="tipo" value="Manutenção preventiva" checked><span>Preventiva</span></label>
+              <label><input type="radio" name="tipo" value="Manutenção corretiva"><span>Corretiva</span></label>
+              <label><input type="radio" name="tipo" value="Cotação de peças"><span>Peças</span></label>
+              <label><input type="radio" name="tipo" value="Emergência"><span>Emergência</span></label>
+            </div>
+          </div>
+          <div class="campo"><label for="fNome">Nome</label><input id="fNome" name="nome" autocomplete="name" required></div>
+          <div class="campo"><label for="fEmpresa">Empresa ou condomínio</label><input id="fEmpresa" name="empresa" autocomplete="organization"></div>
+          <div class="campo"><label for="fGerador">Gerador (marca, modelo, kVA)</label><input id="fGerador" name="gerador" placeholder="Ex.: Cummins 150 kVA"></div>
+          <div class="campo"><label for="fCidade">Cidade</label><input id="fCidade" name="cidade" autocomplete="address-level2"></div>
+          <div class="campo largo"><label for="fMsg">Mensagem</label><textarea id="fMsg" name="msg" placeholder="Descreva o serviço ou o problema do equipamento."></textarea></div>
+        </div>
+        <p class="erro" id="fErro" role="alert"></p>
+        <button class="btn btn-verde" type="submit"><svg aria-hidden="true"><use href="#i-zap"/></svg>Enviar solicitação pelo WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div>
+      <a class="logo-rodape" href="#inicio"><img src="img/logo-atomo.png" alt="Átomo Geradores" width="367" height="126" loading="lazy"></a>
+      <p>Manutenção preventiva e corretiva de grupos geradores e venda de peças de reposição.</p>
+    </div>
+    <div>
+      <h4>Institucional</h4>
+      <ul>
+        <li><a href="#empresa">Empresa</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#segmentos">Segmentos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Atendimento</h4>
+      <ul>
+        <li><a href="tel:+551148817650">(11) 4881-7650</a></li>
+        <li><a href="https://wa.me/5511979902716" target="_blank" rel="noopener">WhatsApp (11) 97990-2716</a></li>
+        <li><a href="mailto:vendas@atomogeradores.com.br">vendas@atomogeradores.com.br</a></li>
+        <li><a href="https://www.instagram.com/atomogeradores" target="_blank" rel="noopener">Instagram @atomogeradores</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Endereço</h4>
+      <p style="margin:0">Rua Virgílio Martins de Oliveira, 1374<br>Francisco Morato · SP · CEP 07914-043</p>
+      <p style="margin-top:14px">Seg a sex 8h–18h · Sáb 8h–12h<br>Plantão 24h aos sábados, domingos e feriados</p>
+    </div>
+    <div class="rodape-base">
+      <span>© <span id="ano">2026</span> Átomo Geradores · RC Caldas Comércio e Assistência Técnica de Geradores ME</span>
+      <span>Energia em movimento.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- flutuantes -->
+<div class="flutuantes">
+  <button class="cotacao-btn" id="cotacaoBtn" type="button" aria-controls="gaveta" aria-label="Minha cotação">
+    <svg aria-hidden="true"><use href="#i-lista"/></svg><span class="txt">Minha cotação</span><span class="qtd" id="qtd">0</span>
+  </button>
+  <a class="zap-btn" href="https://wa.me/5511979902716?text=Ol%C3%A1%2C%20%C3%81tomo!%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg aria-hidden="true"><use href="#i-zap"/></svg></a>
+</div>
+
+<div class="fundo" id="fundo"></div>
+
+<aside class="gaveta" id="gaveta" role="dialog" aria-modal="true" aria-labelledby="gavetaTitulo" aria-hidden="true">
+  <div class="gaveta-cab">
+    <h3 id="gavetaTitulo">Minha cotação</h3>
+    <button class="fechar" type="button" data-fechar aria-label="Fechar"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <ul class="gaveta-lista" id="gavetaLista"></ul>
+  <div class="gaveta-pe">
+    <div class="campo"><label for="gGerador">Marca e modelo do gerador (opcional)</label><input id="gGerador" placeholder="Ex.: Stemac 80 kVA"></div>
+    <button class="btn btn-verde" id="enviarCotacao" type="button"><svg aria-hidden="true"><use href="#i-zap"/></svg>Pedir cotação pelo WhatsApp</button>
+  </div>
+</aside>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo" aria-hidden="true">
+  <button class="fechar" type="button" data-fechar aria-label="Fechar"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+  <div class="palco"><img id="modalFoto" src="" alt=""></div>
+  <div class="destaque-texto">
+    <span class="cat" id="modalCat"></span>
+    <h3 id="modalTitulo"></h3>
+    <p id="modalDesc"></p>
+    <ul class="specs" id="modalSpecs"></ul>
+    <div class="destaque-acoes">
+      <button class="btn btn-verde add" type="button" id="modalAdd"></button>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const ZAP = "5511979902716";
+  const zapLink = (txt) => `https://wa.me/${ZAP}?text=${encodeURIComponent(txt)}`;
+  const reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const $ = (s) => document.querySelector(s);
+
+  /* cabeçalho e menu */
+  const topo = $("#topo");
+  const aoRolar = () => topo.classList.toggle("rolou", scrollY > 60);
+  addEventListener("scroll", aoRolar, { passive: true }); aoRolar();
+  const toggle = $(".menu-toggle"), menu = $("#menu");
+  toggle.addEventListener("click", () => {
+    const aberto = menu.classList.toggle("aberto");
+    toggle.setAttribute("aria-expanded", aberto);
+    toggle.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
+  });
+  menu.addEventListener("click", (e) => { if (e.target.closest("a")) { menu.classList.remove("aberto"); toggle.setAttribute("aria-expanded", false); } });
+
+  /* dados dos produtos */
+  const CATS = { eletrica: "Comando e elétrica", filtros: "Filtros", combustivel: "Combustível", escape: "Escape e ruído" };
+  const PECAS = [
+    { id: "9406198", cat: "eletrica", nome: "Módulo de comando microprocessado", desc: "Monitora e protege todas as funções do grupo gerador e comanda a partida automática quando a rede falha.", specs: ["Partida, parada e transferência automáticas", "Leitura de tensão, frequência e horímetro", "Alarmes e proteção do motor e do alternador"] },
+    { id: "787698", cat: "eletrica", nome: "Contatores de transferência", desc: "Elementos eletromecânicos que transferem a carga da rede comercial para o grupo gerador e de volta.", specs: ["Transferência rede ↔ gerador", "Dimensionados conforme a carga", "Instalação no quadro de transferência"] },
+    { id: "5523239", cat: "eletrica", nome: "Carregador de bateria 12 V e 24 V", desc: "Mantém a bateria de partida sempre carregada e pronta para o próximo acionamento.", specs: ["Versões 12 V e 24 V", "Carga contínua em flutuação", "Evita falha de partida por bateria fraca"] },
+    { id: "1693974", cat: "eletrica", nome: "Regulador de tensão", desc: "Controla a excitação do alternador e mantém estável a tensão de saída quando a carga varia.", specs: ["Estabilidade da tensão de saída", "Proteção dos equipamentos alimentados", "Modelos para diversos alternadores"] },
+    { id: "4538086", cat: "eletrica", nome: "Bateria de partida", desc: "Bateria para partida de motores diesel de grupos geradores.", specs: ["Alta corrente de partida", "Diversas capacidades", "Instalação e teste na visita técnica"] },
+    { id: "2557215", cat: "eletrica", nome: "Solenoide de parada 12/24 Vcc", desc: "Corta o combustível e desliga o motor no comando de parada.", specs: ["Tensões de 12 Vcc e 24 Vcc", "Acionamento pelo módulo de comando", "Reposição para diversos motores"] },
+    { id: "7997329", cat: "eletrica", nome: "Kit de pré-aquecimento", desc: "Mantém o motor aquecido para partidas rápidas e com menos desgaste.", specs: ["Resistência de aquecimento do bloco", "Partida mais rápida em dias frios", "Menor desgaste na partida"] },
+    { id: "1697892", cat: "filtros", nome: "Filtro de ar", desc: "Elemento filtrante para a admissão de ar do motor.", specs: ["Protege o motor contra poeira", "Troca na manutenção preventiva", "Modelos para diversos motores"] },
+    { id: "filtro-ah1100-b", cat: "filtros", nome: "Filtro de ar AH 1100", desc: "Elemento de papel plissado com tela metálica de proteção e flange de fixação.", specs: ["Papel filtrante plissado", "Tela metálica de proteção", "Flange de fixação"] },
+    { id: "7297958", cat: "filtros", nome: "Filtro de óleo lubrificante", desc: "Retém partículas do óleo e protege os componentes internos do motor.", specs: ["Proteção de mancais e pistões", "Troca junto com o óleo", "Modelos para diversos motores"] },
+    { id: "875804", cat: "filtros", nome: "Filtro de combustível", desc: "Filtra o diesel antes da bomba injetora.", specs: ["Protege o sistema de injeção", "Troca na manutenção preventiva", "Modelos para diversos motores"] },
+    { id: "3192038", cat: "filtros", nome: "Filtro de combustível Racor", desc: "Filtro separador de água com copo para inspeção e drenagem.", specs: ["Separa a água do diesel", "Copo transparente para inspeção", "Dreno para descarte da água"] },
+    { id: "3416238", cat: "combustivel", nome: "Tanque de combustível 250 L", desc: "Tanque para abastecimento do grupo gerador.", specs: ["Capacidade de 250 litros", "Uso com bacia de contenção", "Instalação junto ao grupo"] },
+    { id: "611713", cat: "combustivel", nome: "Dique de contenção", desc: "Bacia que retém vazamentos de óleo e diesel sob o tanque ou o grupo gerador.", specs: ["Contém vazamentos de óleo e diesel", "Protege piso e meio ambiente", "Diversas dimensões"] },
+    { id: "4103364", cat: "escape", nome: "Filtro de poluentes (catalisador)", desc: "Retém as partículas pesadas dos gases gerados pela queima do combustível.", specs: ["Reduz a fuligem no escape", "Instalação na linha de escape", "Dimensionado para o motor"] },
+    { id: "7043667", cat: "escape", nome: "Tampa oscilante para escapamento", desc: "Fecha a saída do escape com o motor parado, evitando a entrada de chuva e sujeira.", specs: ["Abre com a pressão dos gases", "Impede entrada de água", "Diversos diâmetros"] },
+    { id: "5735423", cat: "escape", nome: "Amortecedor flexível", desc: "Junta sanfonada que absorve vibração e dilatação térmica na linha de escape.", specs: ["Absorve vibração do motor", "Compensa a dilatação térmica", "Diversos diâmetros e flanges"] },
+    { id: "7686292", cat: "escape", nome: "Kit de atenuação da sala do gerador", desc: "Porta acústica, atenuadores de entrada e saída de ar e silencioso hospitalar para reduzir o ruído do grupo gerador.", specs: ["Porta acústica", "Atenuadores de entrada e saída de ar", "Silencioso hospitalar"] },
+    { id: "veneziana", cat: "escape", nome: "Veneziana de ventilação", desc: "Veneziana em chapa galvanizada para a entrada e a saída de ar da sala do gerador.", specs: ["Chapa galvanizada", "Entrada e saída de ar", "Fabricada sob medida"] }
+  ];
+  const porId = Object.fromEntries(PECAS.map(p => [p.id, p]));
+  const foto = (p) => `img/produtos/${p.id}.jpg`;
+
+  /* lista de cotação */
+  let lista = {};
+  try { lista = JSON.parse(localStorage.getItem("atomo-cotacao") || "{}") || {}; } catch (e) { lista = {}; }
+  Object.keys(lista).forEach(k => { if (!porId[k]) delete lista[k]; });
+  const salvar = () => { try { localStorage.setItem("atomo-cotacao", JSON.stringify(lista)); } catch (e) {} };
+
+  function rotuloAdd(btn) {
+    const na = !!lista[btn.dataset.id];
+    btn.classList.toggle("na-lista", na);
+    btn.setAttribute("aria-pressed", na);
+    btn.innerHTML = `<svg aria-hidden="true"><use href="#${na ? "i-ok" : "i-mais"}"/></svg>${na ? "Adicionado à cotação" : "Adicionar à cotação"}`;
+  }
+  function alternar(id) {
+    if (lista[id]) delete lista[id]; else lista[id] = 1;
+    salvar(); atualizarTudo();
+    const cb = $("#cotacaoBtn"); cb.classList.remove("pulo"); void cb.offsetWidth; cb.classList.add("pulo");
+  }
+
+  /* catálogo */
+  let catAtiva = "todas", termo = "";
+  const chips = $("#chips"), catalogo = $("#catalogo"), busca = $("#busca");
+  chips.innerHTML = [["todas", "Todos"], ...Object.entries(CATS)]
+    .map(([k, nome]) => `<button class="chip" type="button" data-cat="${k}" aria-pressed="${k === catAtiva}">${nome}</button>`).join("");
+  chips.addEventListener("click", (e) => {
+    const b = e.target.closest(".chip"); if (!b) return;
+    catAtiva = b.dataset.cat;
+    chips.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c === b));
+    render();
+  });
+  const norm = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  busca.addEventListener("input", () => { termo = norm(busca.value.trim()); render(); });
+
+  function render() {
+    const itens = PECAS.filter(p =>
+      (catAtiva === "todas" || p.cat === catAtiva) &&
+      (!termo || termo.split(/\s+/).every(t => norm(p.nome + " " + p.desc + " " + CATS[p.cat]).includes(t))));
+    if (!itens.length) {
+      const q = busca.value.replace(/[<>&"]/g, "");
+      catalogo.innerHTML = `<div class="vazio">Nenhum produto encontrado para “${q}”. <a href="${zapLink("Olá, Átomo! Procuro a peça: " + busca.value)}" target="_blank" rel="noopener">Consulte pelo WhatsApp</a>: trabalhamos com mais itens do que os listados aqui.</div>`;
+      return;
+    }
+    catalogo.innerHTML = itens.map(p => {
+      const na = !!lista[p.id];
+      return `<article class="peca">
+        <button class="peca-foto" type="button" data-ver="${p.id}" aria-label="Ver detalhes: ${p.nome}"><img src="${foto(p)}" alt="" loading="lazy"><span class="ver">Ver detalhes</span></button>
+        <div class="peca-corpo">
+          <span class="peca-cat">${CATS[p.cat]}</span>
+          <h4>${p.nome}</h4>
+          <button class="add${na ? " na-lista" : ""}" type="button" data-id="${p.id}" aria-pressed="${na}">
+            <svg aria-hidden="true"><use href="#${na ? "i-ok" : "i-mais"}"/></svg>${na ? "Na cotação" : `<span>Adicionar<span class="l-longo"> à cotação</span></span>`}
+          </button>
+        </div>
+      </article>`;
+    }).join("");
+  }
+
+  /* camadas: gaveta e modal */
+  const fundo = $("#fundo"), gaveta = $("#gaveta"), modal = $("#modal");
+  let aberto = null, ultimoFoco = null;
+  gaveta.inert = true; modal.inert = true;
+  function abrir(el) {
+    if (aberto) fechar(true);
+    ultimoFoco = document.activeElement; aberto = el;
+    el.classList.add(el === gaveta ? "aberta" : "aberto");
+    el.setAttribute("aria-hidden", "false"); el.inert = false;
+    fundo.classList.add("ativo");
+    setTimeout(() => el.querySelector("[data-fechar]").focus(), 60);
+  }
+  function fechar(semFoco) {
+    if (!aberto) return;
+    aberto.classList.remove("aberta", "aberto");
+    aberto.setAttribute("aria-hidden", "true"); aberto.inert = true;
+    fundo.classList.remove("ativo"); aberto = null;
+    if (!semFoco) ultimoFoco?.focus();
+  }
+  fundo.addEventListener("click", () => fechar());
+  document.querySelectorAll("[data-fechar]").forEach(b => b.addEventListener("click", () => fechar()));
+  addEventListener("keydown", (e) => { if (e.key === "Escape") fechar(); });
+  $("#cotacaoBtn").addEventListener("click", () => abrir(gaveta));
+
+  function abrirModal(id) {
+    const p = porId[id];
+    $("#modalFoto").src = foto(p); $("#modalFoto").alt = p.nome;
+    $("#modalCat").textContent = CATS[p.cat];
+    $("#modalTitulo").textContent = p.nome;
+    $("#modalDesc").textContent = p.desc;
+    $("#modalSpecs").innerHTML = p.specs.map(s => `<li><svg aria-hidden="true"><use href="#i-check"/></svg>${s}</li>`).join("");
+    $("#modalAdd").dataset.id = id; rotuloAdd($("#modalAdd"));
+    abrir(modal);
+  }
+
+  /* cliques delegados */
+  document.addEventListener("click", (e) => {
+    const ver = e.target.closest("[data-ver]");
+    if (ver) { abrirModal(ver.dataset.ver); return; }
+    const add = e.target.closest(".add[data-id]");
+    if (add) { alternar(add.dataset.id); return; }
+  });
+
+  /* gaveta */
+  const glista = $("#gavetaLista");
+  function atualizarGaveta() {
+    const ids = Object.keys(lista);
+    $("#qtd").textContent = ids.reduce((s, k) => s + lista[k], 0);
+    $("#cotacaoBtn").hidden = !ids.length && !gaveta.classList.contains("aberta");
+    $("#enviarCotacao").disabled = !ids.length;
+    glista.innerHTML = ids.length ? ids.map(id => {
+      const p = porId[id];
+      return `<li><img src="${foto(p)}" alt=""><b>${p.nome}</b>
+        <div class="stepper"><button type="button" data-menos="${id}" aria-label="Diminuir ${p.nome}">−</button><span>${lista[id]}</span><button type="button" data-mais="${id}" aria-label="Aumentar ${p.nome}">+</button></div></li>`;
+    }).join("") : `<li class="gaveta-vazia">Sua cotação está vazia.<br>Adicione itens no <a href="#produtos">catálogo de produtos</a>.</li>`;
+  }
+  glista.addEventListener("click", (e) => {
+    if (e.target.closest("a")) { fechar(); return; }
+    const mais = e.target.closest("[data-mais]"), menos = e.target.closest("[data-menos]");
+    if (mais) lista[mais.dataset.mais]++;
+    if (menos) { const id = menos.dataset.menos; if (--lista[id] <= 0) delete lista[id]; }
+    if (mais || menos) { salvar(); atualizarTudo(); }
+  });
+  $("#enviarCotacao").addEventListener("click", () => {
+    const ids = Object.keys(lista); if (!ids.length) return;
+    const ger = $("#gGerador").value.trim();
+    const txt = "Olá, Átomo! Gostaria de uma cotação:\n" +
+      ids.map(id => `• ${lista[id]}× ${porId[id].nome}`).join("\n") +
+      (ger ? `\n\nGerador: ${ger}` : "");
+    window.open(zapLink(txt), "_blank", "noopener");
+  });
+
+  function atualizarTudo() {
+    render(); atualizarGaveta();
+    document.querySelectorAll(".destaque-acoes .add[data-id]").forEach(rotuloAdd);
+  }
+
+  /* formulário */
+  $("#form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const f = e.target, nome = f.nome.value.trim(), erro = $("#fErro");
+    if (!nome) { erro.textContent = "Informe seu nome para enviarmos a solicitação."; f.nome.focus(); return; }
+    erro.textContent = "";
+    const linhas = [
+      `Olá, Átomo! Sou ${nome}${f.empresa.value.trim() ? " (" + f.empresa.value.trim() + ")" : ""}.`,
+      `Atendimento: ${f.tipo.value}`,
+      f.gerador.value.trim() && `Gerador: ${f.gerador.value.trim()}`,
+      f.cidade.value.trim() && `Cidade: ${f.cidade.value.trim()}`,
+      f.msg.value.trim() && `\n${f.msg.value.trim()}`
+    ].filter(Boolean);
+    window.open(zapLink(linhas.join("\n")), "_blank", "noopener");
+  });
+
+  /* revelação ao rolar */
+  if (!reduz && "IntersectionObserver" in window) {
+    const ro = new IntersectionObserver((ents) => ents.forEach(en => {
+      if (en.isIntersecting) { en.target.classList.add("visivel"); ro.unobserve(en.target); }
+    }), { threshold: .08, rootMargin: "0px 0px -40px 0px" });
+    document.querySelectorAll(".revela").forEach(el => ro.observe(el));
+  } else {
+    document.querySelectorAll(".revela").forEach(el => el.classList.add("visivel"));
+  }
+
+  $("#ano").textContent = new Date().getFullYear();
+  atualizarTudo();
+})();
+</script>
+</body>
+</html>
